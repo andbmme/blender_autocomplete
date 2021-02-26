@@ -1,4 +1,3 @@
-import sys
 import typing
 
 
@@ -18,7 +17,7 @@ def bend(value: float = (0.0),
          center_override: float = (0.0, 0.0, 0.0),
          release_confirm: bool = False,
          use_accurate: bool = False):
-    '''Bend selected items between the 3D cursor and the mouse 
+    """Bend selected items between the 3D cursor and the mouse 
 
     :param value: Angle 
     :type value: float
@@ -26,7 +25,11 @@ def bend(value: float = (0.0),
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -36,7 +39,9 @@ def bend(value: float = (0.0),
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -44,15 +49,18 @@ def bend(value: float = (0.0),
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -61,25 +69,27 @@ def create_orientation(name: str = "",
                        use_view: bool = False,
                        use: bool = False,
                        overwrite: bool = False):
-    '''Create transformation orientation from selection 
+    """Create transformation orientation from selection 
 
     :param name: Name, Name of the new custom orientation 
     :type name: str
-    :param use_view: Use View, Use the current view instead of the active object to create the new orientation 
+    :param use_view: Use View, Use the current view instead of the active
+    object to create the new orientation
     :type use_view: bool
     :param use: Use After Creation, Select orientation after its creation 
     :type use: bool
-    :param overwrite: Overwrite Previous, Overwrite previously created orientation with same name 
+    :param overwrite: Overwrite Previous, Overwrite previously created
+    orientation with same name
     :type overwrite: bool
-    '''
+    """
 
     pass
 
 
 def delete_orientation():
-    '''Delete transformation orientation 
+    """Delete transformation orientation 
 
-    '''
+    """
 
     pass
 
@@ -92,13 +102,15 @@ def edge_bevelweight(value: float = 0.0,
                      snap_normal: float = (0.0, 0.0, 0.0),
                      release_confirm: bool = False,
                      use_accurate: bool = False):
-    '''Change the bevel weight of edges 
+    """Change the bevel weight of edges 
 
     :param value: Factor 
     :type value: float
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -106,11 +118,12 @@ def edge_bevelweight(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -123,13 +136,15 @@ def edge_crease(value: float = 0.0,
                 snap_normal: float = (0.0, 0.0, 0.0),
                 release_confirm: bool = False,
                 use_accurate: bool = False):
-    '''Change the crease of edges 
+    """Change the crease of edges 
 
     :param value: Factor 
     :type value: float
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -137,11 +152,12 @@ def edge_crease(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -160,15 +176,17 @@ def edge_slide(value: float = 0.0,
                correct_uv: bool = True,
                release_confirm: bool = False,
                use_accurate: bool = False):
-    '''Slide an edge loop along a mesh 
+    """Slide an edge loop along a mesh 
 
     :param value: Factor 
     :type value: float
     :param single_side: Single Side 
     :type single_side: bool
-    :param use_even: Even, Make the edge loop match the shape of the adjacent edge loop 
+    :param use_even: Even, Make the edge loop match the shape of the adjacent
+    edge loop
     :type use_even: bool
-    :param flipped: Flipped, When Even mode is active, flips between the two adjacent edge loops 
+    :param flipped: Flipped, When Even mode is active, flips between the two
+    adjacent edge loops
     :type flipped: bool
     :param use_clamp: Clamp, Clamp within the edge extents 
     :type use_clamp: bool
@@ -176,7 +194,9 @@ def edge_slide(value: float = 0.0,
     :type mirror: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -186,19 +206,20 @@ def edge_slide(value: float = 0.0,
     :type snap_normal: float
     :param correct_uv: Correct UVs, Correct UV coordinates when transforming 
     :type correct_uv: bool
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
 
 def from_gizmo():
-    '''Transform selected items by mode type 
+    """Transform selected items by mode type 
 
-    '''
+    """
 
     pass
 
@@ -217,7 +238,7 @@ def mirror(orient_type: typing.Union[str, int] = 'GLOBAL',
            center_override: float = (0.0, 0.0, 0.0),
            release_confirm: bool = False,
            use_accurate: bool = False):
-    '''Mirror selected items around one or more axes 
+    """Mirror selected items around one or more axes 
 
     :param orient_type: Orientation, Transformation orientation 
     :type orient_type: typing.Union[str, int]
@@ -229,7 +250,11 @@ def mirror(orient_type: typing.Union[str, int] = 'GLOBAL',
     :type constraint_axis: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -237,15 +262,18 @@ def mirror(orient_type: typing.Union[str, int] = 'GLOBAL',
     :type use_proportional_connected: bool
     :param use_proportional_projected: Projected (2D) 
     :type use_proportional_projected: bool
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -265,7 +293,7 @@ def push_pull(value: float = 0.0,
               center_override: float = (0.0, 0.0, 0.0),
               release_confirm: bool = False,
               use_accurate: bool = False):
-    '''Push/Pull selected items 
+    """Push/Pull selected items 
 
     :param value: Distance 
     :type value: float
@@ -273,7 +301,11 @@ def push_pull(value: float = 0.0,
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -283,7 +315,9 @@ def push_pull(value: float = 0.0,
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -291,13 +325,15 @@ def push_pull(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -325,7 +361,7 @@ def resize(value: float = (1.0, 1.0, 1.0),
            center_override: float = (0.0, 0.0, 0.0),
            release_confirm: bool = False,
            use_accurate: bool = False):
-    '''Scale (resize) selected items 
+    """Scale (resize) selected items 
 
     :param value: Scale 
     :type value: float
@@ -341,7 +377,11 @@ def resize(value: float = (1.0, 1.0, 1.0),
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -351,7 +391,9 @@ def resize(value: float = (1.0, 1.0, 1.0),
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -359,19 +401,22 @@ def resize(value: float = (1.0, 1.0, 1.0),
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
     :param texture_space: Edit Texture Space, Edit Object data texture space 
     :type texture_space: bool
     :param remove_on_cancel: Remove on Cancel, Remove elements on cancel 
     :type remove_on_cancel: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -398,7 +443,7 @@ def rotate(value: float = 0.0,
            center_override: float = (0.0, 0.0, 0.0),
            release_confirm: bool = False,
            use_accurate: bool = False):
-    '''Rotate selected items 
+    """Rotate selected items 
 
     :param value: Angle 
     :type value: float
@@ -416,7 +461,11 @@ def rotate(value: float = 0.0,
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -426,7 +475,9 @@ def rotate(value: float = 0.0,
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -434,15 +485,18 @@ def rotate(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -457,7 +511,7 @@ def rotate_normal(value: float = 0.0,
                   mirror: bool = False,
                   release_confirm: bool = False,
                   use_accurate: bool = False):
-    '''Rotate split normal of selected items 
+    """Rotate split normal of selected items 
 
     :param value: Angle 
     :type value: float
@@ -473,21 +527,22 @@ def rotate_normal(value: float = 0.0,
     :type constraint_axis: bool
     :param mirror: Mirror Editing 
     :type mirror: bool
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
 
 def select_orientation(orientation: typing.Union[str, int] = 'GLOBAL'):
-    '''Select transformation orientation 
+    """Select transformation orientation 
 
     :param orientation: Orientation, Transformation orientation 
     :type orientation: typing.Union[str, int]
-    '''
+    """
 
     pass
 
@@ -500,13 +555,15 @@ def seq_slide(value: float = (0.0, 0.0),
               snap_normal: float = (0.0, 0.0, 0.0),
               release_confirm: bool = False,
               use_accurate: bool = False):
-    '''Slide a sequence strip in time 
+    """Slide a sequence strip in time 
 
     :param value: Offset 
     :type value: float
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -514,11 +571,12 @@ def seq_slide(value: float = (0.0, 0.0),
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -544,7 +602,7 @@ def shear(value: float = 0.0,
           gpencil_strokes: bool = False,
           release_confirm: bool = False,
           use_accurate: bool = False):
-    '''Shear selected items along the horizontal screen axis 
+    """Shear selected items along the horizontal screen axis 
 
     :param value: Offset 
     :type value: float
@@ -562,7 +620,11 @@ def shear(value: float = 0.0,
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -572,7 +634,9 @@ def shear(value: float = 0.0,
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -580,13 +644,15 @@ def shear(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -606,17 +672,22 @@ def shrink_fatten(value: float = 0.0,
                   snap_normal: float = (0.0, 0.0, 0.0),
                   release_confirm: bool = False,
                   use_accurate: bool = False):
-    '''Shrink/fatten selected vertices along normals 
+    """Shrink/fatten selected vertices along normals 
 
     :param value: Offset 
     :type value: float
-    :param use_even_offset: Offset Even, Scale the offset to give more even thickness 
+    :param use_even_offset: Offset Even, Scale the offset to give more even
+    thickness
     :type use_even_offset: bool
     :param mirror: Mirror Editing 
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -626,7 +697,9 @@ def shrink_fatten(value: float = 0.0,
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -634,11 +707,12 @@ def shrink_fatten(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -662,7 +736,7 @@ def skin_resize(value: float = (1.0, 1.0, 1.0),
                 snap_normal: float = (0.0, 0.0, 0.0),
                 release_confirm: bool = False,
                 use_accurate: bool = False):
-    '''Scale selected vertices’ skin radii 
+    """Scale selected vertices’ skin radii 
 
     :param value: Scale 
     :type value: float
@@ -678,7 +752,11 @@ def skin_resize(value: float = (1.0, 1.0, 1.0),
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -688,7 +766,9 @@ def skin_resize(value: float = (1.0, 1.0, 1.0),
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -696,11 +776,12 @@ def skin_resize(value: float = (1.0, 1.0, 1.0),
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -719,7 +800,7 @@ def tilt(value: float = 0.0,
          snap_normal: float = (0.0, 0.0, 0.0),
          release_confirm: bool = False,
          use_accurate: bool = False):
-    '''Tilt selected control vertices of 3D curve 
+    """Tilt selected control vertices of 3D curve 
 
     :param value: Angle 
     :type value: float
@@ -727,7 +808,11 @@ def tilt(value: float = 0.0,
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -737,7 +822,9 @@ def tilt(value: float = 0.0,
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -745,11 +832,12 @@ def tilt(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -770,7 +858,7 @@ def tosphere(value: float = 0.0,
              center_override: float = (0.0, 0.0, 0.0),
              release_confirm: bool = False,
              use_accurate: bool = False):
-    '''Move selected vertices outward in a spherical shape around mesh center 
+    """Move selected vertices outward in a spherical shape around mesh center 
 
     :param value: Factor 
     :type value: float
@@ -778,7 +866,11 @@ def tosphere(value: float = 0.0,
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -788,7 +880,9 @@ def tosphere(value: float = 0.0,
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -796,15 +890,18 @@ def tosphere(value: float = 0.0,
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -825,7 +922,7 @@ def trackball(value: float = (0.0, 0.0),
               center_override: float = (0.0, 0.0, 0.0),
               release_confirm: bool = False,
               use_accurate: bool = False):
-    '''Trackball style rotation of selected items 
+    """Trackball style rotation of selected items 
 
     :param value: Angle 
     :type value: float
@@ -833,7 +930,11 @@ def trackball(value: float = (0.0, 0.0),
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -843,7 +944,9 @@ def trackball(value: float = (0.0, 0.0),
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -851,15 +954,18 @@ def trackball(value: float = (0.0, 0.0),
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -887,7 +993,7 @@ def transform(mode: typing.Union[str, int] = 'TRANSLATION',
               center_override: float = (0.0, 0.0, 0.0),
               release_confirm: bool = False,
               use_accurate: bool = False):
-    '''Transform selected items by mode type 
+    """Transform selected items by mode type 
 
     :param mode: Mode 
     :type mode: typing.Union[str, int]
@@ -895,11 +1001,24 @@ def transform(mode: typing.Union[str, int] = 'TRANSLATION',
     :type value: float
     :param orient_axis: Axis 
     :type orient_axis: typing.Union[str, int]
-    :param orient_type: Orientation, Transformation orientationGLOBAL Global, Align the transformation axes to world space.LOCAL Local, Align the transformation axes to the selected objects’ local space.NORMAL Normal, Align the transformation axes to average normal of selected elements (bone Y axis for pose mode).GIMBAL Gimbal, Align each axis to the Euler rotation axis as used for input.VIEW View, Align the transformation axes to the window.CURSOR Cursor, Align the transformation axes to the 3D cursor. 
+    :param orient_type: Orientation, Transformation orientationGLOBAL Global,
+    Align the transformation axes to world space.LOCAL Local, Align the
+    transformation axes to the selected objects’ local space.NORMAL Normal,
+    Align the transformation axes to average normal of selected elements (
+    bone Y axis for pose mode).GIMBAL Gimbal, Align each axis to the Euler
+    rotation axis as used for input.VIEW View, Align the transformation axes
+    to the window.CURSOR Cursor, Align the transformation axes to the 3D
+    cursor.
     :type orient_type: typing.Union[str, int]
     :param orient_matrix: Matrix 
     :type orient_matrix: float
-    :param orient_matrix_type: Matrix OrientationGLOBAL Global, Align the transformation axes to world space.LOCAL Local, Align the transformation axes to the selected objects’ local space.NORMAL Normal, Align the transformation axes to average normal of selected elements (bone Y axis for pose mode).GIMBAL Gimbal, Align each axis to the Euler rotation axis as used for input.VIEW View, Align the transformation axes to the window.CURSOR Cursor, Align the transformation axes to the 3D cursor. 
+    :param orient_matrix_type: Matrix OrientationGLOBAL Global, Align the
+    transformation axes to world space.LOCAL Local, Align the transformation
+    axes to the selected objects’ local space.NORMAL Normal, Align the
+    transformation axes to average normal of selected elements (bone Y axis
+    for pose mode).GIMBAL Gimbal, Align each axis to the Euler rotation axis
+    as used for input.VIEW View, Align the transformation axes to the
+    window.CURSOR Cursor, Align the transformation axes to the 3D cursor.
     :type orient_matrix_type: typing.Union[str, int]
     :param constraint_axis: Constraint Axis 
     :type constraint_axis: bool
@@ -907,7 +1026,11 @@ def transform(mode: typing.Union[str, int] = 'TRANSLATION',
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -917,7 +1040,9 @@ def transform(mode: typing.Union[str, int] = 'TRANSLATION',
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -925,15 +1050,18 @@ def transform(mode: typing.Union[str, int] = 'TRANSLATION',
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
-    :param center_override: Center Override, Force using this center value (when set) 
+    :param center_override: Center Override, Force using this center value (
+    when set)
     :type center_override: float
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -961,15 +1089,28 @@ def translate(value: float = (0.0, 0.0, 0.0),
               remove_on_cancel: bool = False,
               release_confirm: bool = False,
               use_accurate: bool = False):
-    '''Move selected items 
+    """Move selected items 
 
     :param value: Move 
     :type value: float
-    :param orient_type: Orientation, Transformation orientationGLOBAL Global, Align the transformation axes to world space.LOCAL Local, Align the transformation axes to the selected objects’ local space.NORMAL Normal, Align the transformation axes to average normal of selected elements (bone Y axis for pose mode).GIMBAL Gimbal, Align each axis to the Euler rotation axis as used for input.VIEW View, Align the transformation axes to the window.CURSOR Cursor, Align the transformation axes to the 3D cursor. 
+    :param orient_type: Orientation, Transformation orientationGLOBAL Global,
+    Align the transformation axes to world space.LOCAL Local, Align the
+    transformation axes to the selected objects’ local space.NORMAL Normal,
+    Align the transformation axes to average normal of selected elements (
+    bone Y axis for pose mode).GIMBAL Gimbal, Align each axis to the Euler
+    rotation axis as used for input.VIEW View, Align the transformation axes
+    to the window.CURSOR Cursor, Align the transformation axes to the 3D
+    cursor.
     :type orient_type: typing.Union[str, int]
     :param orient_matrix: Matrix 
     :type orient_matrix: float
-    :param orient_matrix_type: Matrix OrientationGLOBAL Global, Align the transformation axes to world space.LOCAL Local, Align the transformation axes to the selected objects’ local space.NORMAL Normal, Align the transformation axes to average normal of selected elements (bone Y axis for pose mode).GIMBAL Gimbal, Align each axis to the Euler rotation axis as used for input.VIEW View, Align the transformation axes to the window.CURSOR Cursor, Align the transformation axes to the 3D cursor. 
+    :param orient_matrix_type: Matrix OrientationGLOBAL Global, Align the
+    transformation axes to world space.LOCAL Local, Align the transformation
+    axes to the selected objects’ local space.NORMAL Normal, Align the
+    transformation axes to average normal of selected elements (bone Y axis
+    for pose mode).GIMBAL Gimbal, Align each axis to the Euler rotation axis
+    as used for input.VIEW View, Align the transformation axes to the
+    window.CURSOR Cursor, Align the transformation axes to the 3D cursor.
     :type orient_matrix_type: typing.Union[str, int]
     :param constraint_axis: Constraint Axis 
     :type constraint_axis: bool
@@ -977,7 +1118,11 @@ def translate(value: float = (0.0, 0.0, 0.0),
     :type mirror: bool
     :param use_proportional_edit: Proportional Editing 
     :type use_proportional_edit: bool
-    :param proportional_edit_falloff: Proportional Falloff, Falloff type for proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere, Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square, Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff. 
+    :param proportional_edit_falloff: Proportional Falloff, Falloff type for
+    proportional editing modeSMOOTH Smooth, Smooth falloff.SPHERE Sphere,
+    Spherical falloff.ROOT Root, Root falloff.INVERSE_SQUARE Inverse Square,
+    Inverse Square falloff.SHARP Sharp, Sharp falloff.LINEAR Linear, Linear
+    falloff.CONSTANT Constant, Constant falloff.RANDOM Random, Random falloff.
     :type proportional_edit_falloff: typing.Union[str, int]
     :param proportional_size: Proportional Size 
     :type proportional_size: float
@@ -987,7 +1132,9 @@ def translate(value: float = (0.0, 0.0, 0.0),
     :type use_proportional_projected: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -995,7 +1142,8 @@ def translate(value: float = (0.0, 0.0, 0.0),
     :type snap_align: bool
     :param snap_normal: Normal 
     :type snap_normal: float
-    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil strokes 
+    :param gpencil_strokes: Edit Grease Pencil, Edit selected Grease Pencil
+    strokes
     :type gpencil_strokes: bool
     :param cursor_transform: Transform Cursor 
     :type cursor_transform: bool
@@ -1003,11 +1151,12 @@ def translate(value: float = (0.0, 0.0, 0.0),
     :type texture_space: bool
     :param remove_on_cancel: Remove on Cancel, Remove elements on cancel 
     :type remove_on_cancel: bool
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -1025,13 +1174,15 @@ def vert_slide(value: float = 0.0,
                correct_uv: bool = True,
                release_confirm: bool = False,
                use_accurate: bool = False):
-    '''Slide a vertex along a mesh 
+    """Slide a vertex along a mesh 
 
     :param value: Factor 
     :type value: float
-    :param use_even: Even, Make the edge loop match the shape of the adjacent edge loop 
+    :param use_even: Even, Make the edge loop match the shape of the adjacent
+    edge loop
     :type use_even: bool
-    :param flipped: Flipped, When Even mode is active, flips between the two adjacent edge loops 
+    :param flipped: Flipped, When Even mode is active, flips between the two
+    adjacent edge loops
     :type flipped: bool
     :param use_clamp: Clamp, Clamp within the edge extents 
     :type use_clamp: bool
@@ -1039,7 +1190,9 @@ def vert_slide(value: float = 0.0,
     :type mirror: bool
     :param snap: Use Snapping Options 
     :type snap: bool
-    :param snap_target: TargetCLOSEST Closest, Snap closest point onto target.CENTER Center, Snap transformation center onto target.MEDIAN Median, Snap median onto target.ACTIVE Active, Snap active onto target. 
+    :param snap_target: TargetCLOSEST Closest, Snap closest point onto
+    target.CENTER Center, Snap transformation center onto target.MEDIAN
+    Median, Snap median onto target.ACTIVE Active, Snap active onto target.
     :type snap_target: typing.Union[str, int]
     :param snap_point: Point 
     :type snap_point: float
@@ -1049,11 +1202,12 @@ def vert_slide(value: float = 0.0,
     :type snap_normal: float
     :param correct_uv: Correct UVs, Correct UV coordinates when transforming 
     :type correct_uv: bool
-    :param release_confirm: Confirm on Release, Always confirm operation when releasing button 
+    :param release_confirm: Confirm on Release, Always confirm operation when
+    releasing button
     :type release_confirm: bool
     :param use_accurate: Accurate, Use accurate transformation 
     :type use_accurate: bool
-    '''
+    """
 
     pass
 
@@ -1063,7 +1217,7 @@ def vertex_random(offset: float = 0.0,
                   normal: float = 0.0,
                   seed: int = 0,
                   wait_for_input: bool = True):
-    '''Randomize vertices 
+    """Randomize vertices 
 
     :param offset: Amount, Distance to offset 
     :type offset: float
@@ -1075,7 +1229,7 @@ def vertex_random(offset: float = 0.0,
     :type seed: int
     :param wait_for_input: Wait for Input 
     :type wait_for_input: bool
-    '''
+    """
 
     pass
 
@@ -1087,7 +1241,7 @@ def vertex_warp(warp_angle: float = 6.28319,
                 viewmat: float = ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0),
                                   (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0)),
                 center: float = (0.0, 0.0, 0.0)):
-    '''Warp vertices around the cursor 
+    """Warp vertices around the cursor 
 
     :param warp_angle: Warp Angle, Amount to warp about the cursor 
     :type warp_angle: float
@@ -1101,6 +1255,6 @@ def vertex_warp(warp_angle: float = 6.28319,
     :type viewmat: float
     :param center: Center 
     :type center: float
-    '''
+    """
 
     pass

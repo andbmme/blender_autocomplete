@@ -12,107 +12,120 @@ class AndUP1D:
 
 
 class ContourUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > ContourUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > ContourUP1D """
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the Interface1D is a contour. An Interface1D is a contour if it is borded by a different shape on each of its sides. 
+        """Returns true if the Interface1D is a contour. An Interface1D is a 
+        contour if it is borded by a different shape on each of its sides. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True if the Interface1D is a contour, false otherwise. 
-        '''
+        """
         pass
 
 
 class DensityLowerThanUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > DensityLowerThanUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > 
+    DensityLowerThanUP1D """
 
     def __init__(self, threshold: float, sigma: float = 2.0):
-        '''Builds a DensityLowerThanUP1D object. 
+        """Builds a DensityLowerThanUP1D object. 
 
-        :param threshold: The value of the threshold density. Any Interface1D having a density lower than this threshold will match. 
+        :param threshold: The value of the threshold density. Any Interface1D 
+        having a density lower than this threshold will match. 
         :type threshold: float
-        :param sigma: The sigma value defining the density evaluation window size used in the freestyle.functions.DensityF0D functor. 
+        :param sigma: The sigma value defining the density evaluation window 
+        size used in the freestyle.functions.DensityF0D functor. 
         :type sigma: float
-        '''
+        """
         pass
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the density evaluated for the Interface1D is less than a user-defined density value. 
+        """Returns true if the density evaluated for the Interface1D is less 
+        than a user-defined density value. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True if the density is lower than a threshold. 
-        '''
+        """
         pass
 
 
 class EqualToChainingTimeStampUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > freestyle.types.EqualToChainingTimeStampUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > 
+    freestyle.types.EqualToChainingTimeStampUP1D """
 
     def __init__(self, ts: int):
-        '''Builds a EqualToChainingTimeStampUP1D object. 
+        """Builds a EqualToChainingTimeStampUP1D object. 
 
         :param ts: A time stamp value. 
         :type ts: int
-        '''
+        """
         pass
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the Interface1D’s time stamp is equal to a certain user-defined value. 
+        """Returns true if the Interface1D’s time stamp is equal to a certain 
+        user-defined value. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True if the time stamp is equal to a user-defined value. 
-        '''
+        """
         pass
 
 
 class EqualToTimeStampUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > EqualToTimeStampUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > 
+    EqualToTimeStampUP1D """
 
     def __init__(self, ts: int):
-        '''Builds a EqualToTimeStampUP1D object. 
+        """Builds a EqualToTimeStampUP1D object. 
 
         :param ts: A time stamp value. 
         :type ts: int
-        '''
+        """
         pass
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the Interface1D’s time stamp is equal to a certain user-defined value. 
+        """Returns true if the Interface1D’s time stamp is equal to a certain 
+        user-defined value. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True if the time stamp is equal to a user-defined value. 
-        '''
+        """
         pass
 
 
 class ExternalContourUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > ExternalContourUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > 
+    ExternalContourUP1D """
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the Interface1D is an external contour. An Interface1D is an external contour if it is borded by no shape on one of its sides. 
+        """Returns true if the Interface1D is an external contour. An 
+        Interface1D is an external contour if it is borded by no shape on one 
+        of its sides. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
-        :return:  True if the Interface1D is an external contour, false otherwise. 
-        '''
+        :return:  True if the Interface1D is an external contour, 
+        false otherwise. 
+        """
         pass
 
 
 class FalseBP1D:
-    '''Class hierarchy: freestyle.types.BinaryPredicate1D > FalseBP1D '''
+    """Class hierarchy: freestyle.types.BinaryPredicate1D > FalseBP1D """
 
     def __call__(self, inter1: 'freestyle.types.Interface1D',
                  inter2: 'freestyle.types.Interface1D') -> bool:
-        '''Always returns false. 
+        """Always returns false. 
 
         :param inter1: The first Interface1D object. 
         :type inter1: 'freestyle.types.Interface1D'
@@ -120,44 +133,45 @@ class FalseBP1D:
         :type inter2: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  False. 
-        '''
+        """
         pass
 
 
 class FalseUP0D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate0D > FalseUP0D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate0D > FalseUP0D """
 
     def __call__(self, it: 'freestyle.types.Interface0DIterator') -> bool:
-        '''Always returns false. 
+        """Always returns false. 
 
         :param it: An Interface0DIterator object. 
         :type it: 'freestyle.types.Interface0DIterator'
         :rtype: bool
         :return:  False. 
-        '''
+        """
         pass
 
 
 class FalseUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > FalseUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > FalseUP1D """
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Always returns false. 
+        """Always returns false. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  False. 
-        '''
+        """
         pass
 
 
 class Length2DBP1D:
-    '''Class hierarchy: freestyle.types.BinaryPredicate1D > Length2DBP1D '''
+    """Class hierarchy: freestyle.types.BinaryPredicate1D > Length2DBP1D """
 
     def __call__(self, inter1: 'freestyle.types.Interface1D',
                  inter2: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the 2D length of inter1 is less than the 2D length of inter2. 
+        """Returns true if the 2D length of inter1 is less than the 2D length 
+        of inter2. 
 
         :param inter1: The first Interface1D object. 
         :type inter1: 'freestyle.types.Interface1D'
@@ -165,12 +179,12 @@ class Length2DBP1D:
         :type inter2: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True or false. 
-        '''
+        """
         pass
 
 
 class MaterialBP1D:
-    '''Checks whether the two supplied ViewEdges have the same material. '''
+    """Checks whether the two supplied ViewEdges have the same material. """
 
     pass
 
@@ -200,33 +214,39 @@ class QuantitativeInvisibilityRangeUP1D:
 
 
 class QuantitativeInvisibilityUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > QuantitativeInvisibilityUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > 
+    QuantitativeInvisibilityUP1D """
 
     def __init__(self, qi: int = 0):
-        '''Builds a QuantitativeInvisibilityUP1D object. 
+        """Builds a QuantitativeInvisibilityUP1D object. 
 
-        :param qi: The Quantitative Invisibility you want the Interface1D to have. 
+        :param qi: The Quantitative Invisibility you want the Interface1D to 
+        have. 
         :type qi: int
-        '''
+        """
         pass
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the Quantitative Invisibility evaluated at an Interface1D, using the freestyle.functions.QuantitativeInvisibilityF1D functor, equals a certain user-defined value. 
+        """Returns true if the Quantitative Invisibility evaluated at an 
+        Interface1D, using the 
+        freestyle.functions.QuantitativeInvisibilityF1D functor, equals a 
+        certain user-defined value. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
-        :return:  True if Quantitative Invisibility equals a user-defined value. 
-        '''
+        :return:  True if Quantitative Invisibility equals a user-defined 
+        value. 
+        """
         pass
 
 
 class SameShapeIdBP1D:
-    '''Class hierarchy: freestyle.types.BinaryPredicate1D > SameShapeIdBP1D '''
+    """Class hierarchy: freestyle.types.BinaryPredicate1D > SameShapeIdBP1D """
 
     def __call__(self, inter1: 'freestyle.types.Interface1D',
                  inter2: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if inter1 and inter2 belong to the same shape. 
+        """Returns true if inter1 and inter2 belong to the same shape. 
 
         :param inter1: The first Interface1D object. 
         :type inter1: 'freestyle.types.Interface1D'
@@ -234,40 +254,42 @@ class SameShapeIdBP1D:
         :type inter2: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True or false. 
-        '''
+        """
         pass
 
 
 class ShapeUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > ShapeUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > ShapeUP1D """
 
     def __init__(self, first: int, second: int = 0):
-        '''Builds a ShapeUP1D object. 
+        """Builds a ShapeUP1D object. 
 
         :param first: The first Id component. 
         :type first: int
         :param second: The second Id component. 
         :type second: int
-        '''
+        """
         pass
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the shape to which the Interface1D belongs to has the same freestyle.types.Id as the one specified by the user. 
+        """Returns true if the shape to which the Interface1D belongs to has 
+        the same freestyle.types.Id as the one specified by the user. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
-        :return:  True if Interface1D belongs to the shape of the user-specified Id. 
-        '''
+        :return:  True if Interface1D belongs to the shape of the 
+        user-specified Id. 
+        """
         pass
 
 
 class TrueBP1D:
-    '''Class hierarchy: freestyle.types.BinaryPredicate1D > TrueBP1D '''
+    """Class hierarchy: freestyle.types.BinaryPredicate1D > TrueBP1D """
 
     def __call__(self, inter1: 'freestyle.types.Interface1D',
                  inter2: 'freestyle.types.Interface1D') -> bool:
-        '''Always returns true. 
+        """Always returns true. 
 
         :param inter1: The first Interface1D object. 
         :type inter1: 'freestyle.types.Interface1D'
@@ -275,59 +297,66 @@ class TrueBP1D:
         :type inter2: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True. 
-        '''
+        """
         pass
 
 
 class TrueUP0D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate0D > TrueUP0D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate0D > TrueUP0D """
 
     def __call__(self, it: 'freestyle.types.Interface0DIterator') -> bool:
-        '''Always returns true. 
+        """Always returns true. 
 
         :param it: An Interface0DIterator object. 
         :type it: 'freestyle.types.Interface0DIterator'
         :rtype: bool
         :return:  True. 
-        '''
+        """
         pass
 
 
 class TrueUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > TrueUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > TrueUP1D """
 
     def __call__(self, inter: 'freestyle.types.Interface1D') -> bool:
-        '''Always returns true. 
+        """Always returns true. 
 
         :param inter: An Interface1D object. 
         :type inter: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True. 
-        '''
+        """
         pass
 
 
 class ViewMapGradientNormBP1D:
-    '''Class hierarchy: freestyle.types.BinaryPredicate1D > ViewMapGradientNormBP1D '''
+    """Class hierarchy: freestyle.types.BinaryPredicate1D > 
+    ViewMapGradientNormBP1D """
 
     def __init__(self,
                  level: int,
                  integration_type: 'freestyle.types.IntegrationType' = None,
                  sampling: float = 2.0):
-        '''Builds a ViewMapGradientNormBP1D object. 
+        """Builds a ViewMapGradientNormBP1D object. 
 
-        :param level: The level of the pyramid from which the pixel must be read. 
+        :param level: The level of the pyramid from which the pixel must be 
+        read. 
         :type level: int
-        :param integration_type: The integration method used to compute a single value from a set of values. 
+        :param integration_type: The integration method used to compute a 
+        single value from a set of values. 
         :type integration_type: 'freestyle.types.IntegrationType'
-        :param sampling: The resolution used to sample the chain: GetViewMapGradientNormF0D is evaluated at each sample point and the result is obtained by combining the resulting values into a single one, following the method specified by integration_type. 
+        :param sampling: The resolution used to sample the chain: 
+        GetViewMapGradientNormF0D is evaluated at each sample point and the 
+        result is obtained by combining the resulting values into a single 
+        one, following the method specified by integration_type. 
         :type sampling: float
-        '''
+        """
         pass
 
     def __call__(self, inter1: 'freestyle.types.Interface1D',
                  inter2: 'freestyle.types.Interface1D') -> bool:
-        '''Returns true if the evaluation of the Gradient norm Function is higher for inter1 than for inter2. 
+        """Returns true if the evaluation of the Gradient norm Function is 
+        higher for inter1 than for inter2. 
 
         :param inter1: The first Interface1D object. 
         :type inter1: 'freestyle.types.Interface1D'
@@ -335,15 +364,16 @@ class ViewMapGradientNormBP1D:
         :type inter2: 'freestyle.types.Interface1D'
         :rtype: bool
         :return:  True or false. 
-        '''
+        """
         pass
 
 
 class WithinImageBoundaryUP1D:
-    '''Class hierarchy: freestyle.types.UnaryPredicate1D > WithinImageBoundaryUP1D '''
+    """Class hierarchy: freestyle.types.UnaryPredicate1D > 
+    WithinImageBoundaryUP1D """
 
     def __init__(self, xmin: float, ymin: float, xmax: float, ymax: float):
-        '''Builds an WithinImageBoundaryUP1D object. 
+        """Builds an WithinImageBoundaryUP1D object. 
 
         :param xmin: X lower bound of the image boundary. 
         :type xmin: float
@@ -353,18 +383,19 @@ class WithinImageBoundaryUP1D:
         :type xmax: float
         :param ymax: Y upper bound of the image boundary. 
         :type ymax: float
-        '''
+        """
         pass
 
     def __call__(self, inter):
-        '''Returns true if the Interface1D intersects with image boundary. 
+        """Returns true if the Interface1D intersects with image boundary. 
 
-        '''
+        """
         pass
 
 
 class pyBackTVertexUP0D:
-    '''Check whether an Interface0DIterator references a TVertex and is the one that is hidden (inferred from the context). '''
+    """Check whether an Interface0DIterator references a TVertex and is the 
+    one that is hidden (inferred from the context). """
 
     pass
 

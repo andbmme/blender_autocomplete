@@ -28,13 +28,14 @@ def background_image_add(
         use_multiview: bool = False,
         display_type: typing.Union[str, int] = 'DEFAULT',
         sort_method: typing.Union[str, int] = 'FILE_SORT_ALPHA'):
-    '''Add a new background image 
+    """Add a new background image 
 
     :param name: Name, Image name to assign 
     :type name: str
     :param filepath: File Path, Path to file 
     :type filepath: str
-    :param hide_props_region: Hide Operator Properties, Collapse the region displaying the operator settings 
+    :param hide_props_region: Hide Operator Properties, Collapse the region
+    displaying the operator settings
     :type hide_props_region: bool
     :param filter_blender: Filter .blend files 
     :type filter_blender: bool
@@ -66,53 +67,61 @@ def background_image_add(
     :type filter_folder: bool
     :param filter_blenlib: Filter Blender IDs 
     :type filter_blenlib: bool
-    :param filemode: File Browser Mode, The setting for the file browser mode to load a .blend file, a library or a special file 
+    :param filemode: File Browser Mode, The setting for the file browser mode
+    to load a .blend file, a library or a special file
     :type filemode: int
-    :param relative_path: Relative Path, Select the file relative to the blend file 
+    :param relative_path: Relative Path, Select the file relative to the
+    blend file
     :type relative_path: bool
     :param show_multiview: Enable Multi-View 
     :type show_multiview: bool
     :param use_multiview: Use Multi-View 
     :type use_multiview: bool
-    :param display_type: Display TypeDEFAULT Default, Automatically determine display type for files.LIST_VERTICAL Short List, Display files as short list.LIST_HORIZONTAL Long List, Display files as a detailed list.THUMBNAIL Thumbnails, Display files as thumbnails. 
+    :param display_type: Display TypeDEFAULT Default, Automatically determine
+    display type for files.LIST_VERTICAL Short List, Display files as short
+    list.LIST_HORIZONTAL Long List, Display files as a detailed
+    list.THUMBNAIL Thumbnails, Display files as thumbnails.
     :type display_type: typing.Union[str, int]
-    :param sort_method: File sorting modeFILE_SORT_ALPHA Name, Sort the file list alphabetically.FILE_SORT_EXTENSION Extension, Sort the file list by extension/type.FILE_SORT_TIME Modified Date, Sort files by modification time.FILE_SORT_SIZE Size, Sort files by size. 
+    :param sort_method: File sorting modeFILE_SORT_ALPHA Name, Sort the file
+    list alphabetically.FILE_SORT_EXTENSION Extension, Sort the file list by
+    extension/type.FILE_SORT_TIME Modified Date, Sort files by modification
+    time.FILE_SORT_SIZE Size, Sort files by size.
     :type sort_method: typing.Union[str, int]
-    '''
+    """
 
     pass
 
 
 def background_image_remove(index: int = 0):
-    '''Remove a background image from the 3D view 
+    """Remove a background image from the 3D view 
 
     :param index: Index, Background image index to remove 
     :type index: int
-    '''
+    """
 
     pass
 
 
 def camera_to_view():
-    '''Set camera view to active view 
+    """Set camera view to active view 
 
-    '''
+    """
 
     pass
 
 
 def camera_to_view_selected():
-    '''Move the camera so selected objects are framed 
+    """Move the camera so selected objects are framed 
 
-    '''
+    """
 
     pass
 
 
 def clear_render_border():
-    '''Clear the boundaries of the border render and disable border render 
+    """Clear the boundaries of the border render and disable border render 
 
-    '''
+    """
 
     pass
 
@@ -122,7 +131,7 @@ def clip_border(xmin: int = 0,
                 ymin: int = 0,
                 ymax: int = 0,
                 wait_for_input: bool = True):
-    '''Set the view clipping region 
+    """Set the view clipping region 
 
     :param xmin: X Min 
     :type xmin: int
@@ -134,28 +143,31 @@ def clip_border(xmin: int = 0,
     :type ymax: int
     :param wait_for_input: Wait for Input 
     :type wait_for_input: bool
-    '''
+    """
 
     pass
 
 
 def copybuffer():
-    '''Selected objects are copied to the clipboard 
+    """Selected objects are copied to the clipboard 
 
-    '''
+    """
 
     pass
 
 
 def cursor3d(use_depth: bool = True,
              orientation: typing.Union[str, int] = 'VIEW'):
-    '''Set the location of the 3D cursor 
+    """Set the location of the 3D cursor 
 
     :param use_depth: Surface Project, Project onto the surface 
     :type use_depth: bool
-    :param orientation: Orientation, Preset viewpoint to useNONE None, Leave orientation unchanged.VIEW View, Orient to the viewport.XFORM Transform, Orient to the current transform setting.GEOM Geometry, Match the surface normal. 
+    :param orientation: Orientation, Preset viewpoint to useNONE None,
+    Leave orientation unchanged.VIEW View, Orient to the viewport.XFORM
+    Transform, Orient to the current transform setting.GEOM Geometry,
+    Match the surface normal.
     :type orientation: typing.Union[str, int]
-    '''
+    """
 
     pass
 
@@ -164,7 +176,7 @@ def dolly(mx: int = 0,
           my: int = 0,
           delta: int = 0,
           use_cursor_init: bool = True):
-    '''Dolly in/out in the view 
+    """Dolly in/out in the view 
 
     :param mx: Region Position X 
     :type mx: int
@@ -172,137 +184,142 @@ def dolly(mx: int = 0,
     :type my: int
     :param delta: Delta 
     :type delta: int
-    :param use_cursor_init: Use Mouse Position, Allow the initial mouse position to be used 
+    :param use_cursor_init: Use Mouse Position, Allow the initial mouse
+    position to be used
     :type use_cursor_init: bool
-    '''
+    """
 
     pass
 
 
 def edit_mesh_extrude_individual_move():
-    '''Extrude each individual face separately along local normals 
+    """Extrude each individual face separately along local normals 
 
-    '''
+    """
 
     pass
 
 
 def edit_mesh_extrude_move_normal():
-    '''Extrude region together along the average normal 
+    """Extrude region together along the average normal 
 
-    '''
+    """
 
     pass
 
 
 def edit_mesh_extrude_move_shrink_fatten():
-    '''Extrude region together along local normals 
+    """Extrude region together along local normals 
 
-    '''
+    """
 
     pass
 
 
 def fly():
-    '''Interactively fly around the scene 
+    """Interactively fly around the scene 
 
-    '''
+    """
 
     pass
 
 
 def localview(frame_selected: bool = True):
-    '''Toggle display of selected object(s) separately and centered in view 
+    """Toggle display of selected object(s) separately and centered in view 
 
-    :param frame_selected: Frame Selected, Move the view to frame the selected objects 
+    :param frame_selected: Frame Selected, Move the view to frame the
+    selected objects
     :type frame_selected: bool
-    '''
+    """
 
     pass
 
 
 def localview_remove_from():
-    '''Move selected objects out of local view 
+    """Move selected objects out of local view 
 
-    '''
+    """
 
     pass
 
 
 def move(use_cursor_init: bool = True):
-    '''Move the view 
+    """Move the view 
 
-    :param use_cursor_init: Use Mouse Position, Allow the initial mouse position to be used 
+    :param use_cursor_init: Use Mouse Position, Allow the initial mouse
+    position to be used
     :type use_cursor_init: bool
-    '''
+    """
 
     pass
 
 
 def navigate():
-    '''Interactively navigate around the scene (uses the mode (walk/fly) preference) 
+    """Interactively navigate around the scene (uses the mode (walk/fly)
+    preference)
 
-    '''
+    """
 
     pass
 
 
 def ndof_all():
-    '''Pan and rotate the view with the 3D mouse 
+    """Pan and rotate the view with the 3D mouse 
 
-    '''
+    """
 
     pass
 
 
 def ndof_orbit():
-    '''Orbit the view using the 3D mouse 
+    """Orbit the view using the 3D mouse 
 
-    '''
+    """
 
     pass
 
 
 def ndof_orbit_zoom():
-    '''Orbit and zoom the view using the 3D mouse 
+    """Orbit and zoom the view using the 3D mouse 
 
-    '''
+    """
 
     pass
 
 
 def ndof_pan():
-    '''Pan the view with the 3D mouse 
+    """Pan the view with the 3D mouse 
 
-    '''
+    """
 
     pass
 
 
 def object_as_camera():
-    '''Set the active object as the active camera for this view or scene 
+    """Set the active object as the active camera for this view or scene 
 
-    '''
+    """
 
     pass
 
 
 def object_mode_pie_or_toggle():
-    '''Undocumented contribute <https://developer.blender.org/T51061> 
+    """Undocumented contribute <https://developer.blender.org/T51061> 
 
-    '''
+    """
 
     pass
 
 
 def pastebuffer(autoselect: bool = True, active_collection: bool = True):
-    '''Objects from the clipboard are pasted 
+    """Objects from the clipboard are pasted 
 
     :param autoselect: Select, Select pasted objects 
     :type autoselect: bool
-    :param active_collection: Active Collection, Put pasted objects in the active collection 
+    :param active_collection: Active Collection, Put pasted objects in the
+    active collection
     :type active_collection: bool
-    '''
+    """
 
     pass
 
@@ -312,7 +329,7 @@ def render_border(xmin: int = 0,
                   ymin: int = 0,
                   ymax: int = 0,
                   wait_for_input: bool = True):
-    '''Set the boundaries of the border render and enable border render 
+    """Set the boundaries of the border render and enable border render 
 
     :param xmin: X Min 
     :type xmin: int
@@ -324,33 +341,34 @@ def render_border(xmin: int = 0,
     :type ymax: int
     :param wait_for_input: Wait for Input 
     :type wait_for_input: bool
-    '''
+    """
 
     pass
 
 
 def rotate(use_cursor_init: bool = True):
-    '''Rotate the view 
+    """Rotate the view 
 
-    :param use_cursor_init: Use Mouse Position, Allow the initial mouse position to be used 
+    :param use_cursor_init: Use Mouse Position, Allow the initial mouse
+    position to be used
     :type use_cursor_init: bool
-    '''
+    """
 
     pass
 
 
 def ruler_add():
-    '''Undocumented contribute <https://developer.blender.org/T51061> 
+    """Undocumented contribute <https://developer.blender.org/T51061> 
 
-    '''
+    """
 
     pass
 
 
 def ruler_remove():
-    '''Undocumented contribute <https://developer.blender.org/T51061> 
+    """Undocumented contribute <https://developer.blender.org/T51061> 
 
-    '''
+    """
 
     pass
 
@@ -363,25 +381,29 @@ def select(extend: bool = False,
            enumerate: bool = False,
            object: bool = False,
            location: int = (0, 0)):
-    '''Select and activate item(s) 
+    """Select and activate item(s) 
 
-    :param extend: Extend, Extend selection instead of deselecting everything first 
+    :param extend: Extend, Extend selection instead of deselecting everything
+    first
     :type extend: bool
     :param deselect: Deselect, Remove from selection 
     :type deselect: bool
     :param toggle: Toggle Selection, Toggle the selection 
     :type toggle: bool
-    :param deselect_all: Deselect On Nothing, Deselect all when nothing under the cursor 
+    :param deselect_all: Deselect On Nothing, Deselect all when nothing under
+    the cursor
     :type deselect_all: bool
-    :param center: Center, Use the object center when selecting, in editmode used to extend object selection 
+    :param center: Center, Use the object center when selecting, in editmode
+    used to extend object selection
     :type center: bool
-    :param enumerate: Enumerate, List objects under the mouse (object mode only) 
+    :param enumerate: Enumerate, List objects under the mouse (object mode
+    only)
     :type enumerate: bool
     :param object: Object, Use object selection (editmode only) 
     :type object: bool
     :param location: Location, Mouse location 
     :type location: int
-    '''
+    """
 
     pass
 
@@ -392,7 +414,7 @@ def select_box(xmin: int = 0,
                ymax: int = 0,
                wait_for_input: bool = True,
                mode: typing.Union[str, int] = 'SET'):
-    '''Select items using box selection 
+    """Select items using box selection 
 
     :param xmin: X Min 
     :type xmin: int
@@ -404,9 +426,11 @@ def select_box(xmin: int = 0,
     :type ymax: int
     :param wait_for_input: Wait for Input 
     :type wait_for_input: bool
-    :param mode: ModeSET Set, Set a new selection.ADD Extend, Extend existing selection.SUB Subtract, Subtract existing selection.XOR Difference, Inverts existing selection.AND Intersect, Intersect existing selection. 
+    :param mode: ModeSET Set, Set a new selection.ADD Extend, Extend existing
+    selection.SUB Subtract, Subtract existing selection.XOR Difference,
+    Inverts existing selection.AND Intersect, Intersect existing selection.
     :type mode: typing.Union[str, int]
-    '''
+    """
 
     pass
 
@@ -416,7 +440,7 @@ def select_circle(x: int = 0,
                   radius: int = 25,
                   wait_for_input: bool = True,
                   mode: typing.Union[str, int] = 'SET'):
-    '''Select items using circle selection 
+    """Select items using circle selection 
 
     :param x: X 
     :type x: int
@@ -426,22 +450,25 @@ def select_circle(x: int = 0,
     :type radius: int
     :param wait_for_input: Wait for Input 
     :type wait_for_input: bool
-    :param mode: ModeSET Set, Set a new selection.ADD Extend, Extend existing selection.SUB Subtract, Subtract existing selection. 
+    :param mode: ModeSET Set, Set a new selection.ADD Extend, Extend existing
+    selection.SUB Subtract, Subtract existing selection.
     :type mode: typing.Union[str, int]
-    '''
+    """
 
     pass
 
 
 def select_lasso(path: typing.List['bpy.types.OperatorMousePath'] = None,
                  mode: typing.Union[str, int] = 'SET'):
-    '''Select items using lasso selection 
+    """Select items using lasso selection 
 
     :param path: Path 
     :type path: typing.List['bpy.types.OperatorMousePath']
-    :param mode: ModeSET Set, Set a new selection.ADD Extend, Extend existing selection.SUB Subtract, Subtract existing selection.XOR Difference, Inverts existing selection.AND Intersect, Intersect existing selection. 
+    :param mode: ModeSET Set, Set a new selection.ADD Extend, Extend existing
+    selection.SUB Subtract, Subtract existing selection.XOR Difference,
+    Inverts existing selection.AND Intersect, Intersect existing selection.
     :type mode: typing.Union[str, int]
-    '''
+    """
 
     pass
 
@@ -450,7 +477,7 @@ def select_menu(name: typing.Union[str, int] = '',
                 extend: bool = False,
                 deselect: bool = False,
                 toggle: bool = False):
-    '''Menu object selection 
+    """Menu object selection 
 
     :param name: Object Name 
     :type name: typing.Union[str, int]
@@ -460,124 +487,127 @@ def select_menu(name: typing.Union[str, int] = '',
     :type deselect: bool
     :param toggle: Toggle 
     :type toggle: bool
-    '''
+    """
 
     pass
 
 
 def smoothview():
-    '''Undocumented contribute <https://developer.blender.org/T51061> 
+    """Undocumented contribute <https://developer.blender.org/T51061> 
 
-    '''
+    """
 
     pass
 
 
 def snap_cursor_to_active():
-    '''Snap 3D cursor to the active item 
+    """Snap 3D cursor to the active item 
 
-    '''
+    """
 
     pass
 
 
 def snap_cursor_to_center():
-    '''Snap 3D cursor to the world origin 
+    """Snap 3D cursor to the world origin 
 
-    '''
+    """
 
     pass
 
 
 def snap_cursor_to_grid():
-    '''Snap 3D cursor to the nearest grid division 
+    """Snap 3D cursor to the nearest grid division 
 
-    '''
+    """
 
     pass
 
 
 def snap_cursor_to_selected():
-    '''Snap 3D cursor to the middle of the selected item(s) 
+    """Snap 3D cursor to the middle of the selected item(s) 
 
-    '''
+    """
 
     pass
 
 
 def snap_selected_to_active():
-    '''Snap selected item(s) to the active item 
+    """Snap selected item(s) to the active item 
 
-    '''
+    """
 
     pass
 
 
 def snap_selected_to_cursor(use_offset: bool = True):
-    '''Snap selected item(s) to the 3D cursor 
+    """Snap selected item(s) to the 3D cursor 
 
-    :param use_offset: Offset, If the selection should be snapped as a whole or by each object center 
+    :param use_offset: Offset, If the selection should be snapped as a whole
+    or by each object center
     :type use_offset: bool
-    '''
+    """
 
     pass
 
 
 def snap_selected_to_grid():
-    '''Snap selected item(s) to their nearest grid division 
+    """Snap selected item(s) to their nearest grid division 
 
-    '''
+    """
 
     pass
 
 
 def toggle_matcap_flip():
-    '''Flip MatCap 
+    """Flip MatCap 
 
-    '''
+    """
 
     pass
 
 
 def toggle_shading(type: typing.Union[str, int] = 'WIREFRAME'):
-    '''Toggle shading type in 3D viewport 
+    """Toggle shading type in 3D viewport 
 
-    :param type: Type, Shading type to toggleWIREFRAME Wireframe, Toggle wireframe shading.SOLID Solid, Toggle solid shading.MATERIAL LookDev, Toggle lookdev shading.RENDERED Rendered, Toggle rendered shading. 
+    :param type: Type, Shading type to toggleWIREFRAME Wireframe, Toggle
+    wireframe shading.SOLID Solid, Toggle solid shading.MATERIAL LookDev,
+    Toggle lookdev shading.RENDERED Rendered, Toggle rendered shading.
     :type type: typing.Union[str, int]
-    '''
+    """
 
     pass
 
 
 def toggle_xray():
-    '''Undocumented contribute <https://developer.blender.org/T51061> 
+    """Undocumented contribute <https://developer.blender.org/T51061> 
 
-    '''
+    """
 
     pass
 
 
 def transform_gizmo_set(extend: bool = False,
                         type: typing.Set[typing.Union[str, int]] = {}):
-    '''Set the current transform gizmo 
+    """Set the current transform gizmo 
 
     :param extend: extend 
     :type extend: bool
     :param type: type 
     :type type: typing.Set[typing.Union[str, int]]
-    '''
+    """
 
     pass
 
 
 def view_all(use_all_regions: bool = False, center: bool = False):
-    '''View all objects in scene 
+    """View all objects in scene 
 
     :param use_all_regions: All Regions, View selected for all regions 
     :type use_all_regions: bool
     :param center: Center 
     :type center: bool
-    '''
+    """
 
     pass
 
@@ -585,131 +615,141 @@ def view_all(use_all_regions: bool = False, center: bool = False):
 def view_axis(type: typing.Union[str, int] = 'LEFT',
               align_active: bool = False,
               relative: bool = False):
-    '''Use a preset viewpoint 
+    """Use a preset viewpoint 
 
-    :param type: View, Preset viewpoint to useLEFT Left, View From the Left.RIGHT Right, View From the Right.BOTTOM Bottom, View From the Bottom.TOP Top, View From the Top.FRONT Front, View From the Front.BACK Back, View From the Back. 
+    :param type: View, Preset viewpoint to useLEFT Left, View From the
+    Left.RIGHT Right, View From the Right.BOTTOM Bottom, View From the
+    Bottom.TOP Top, View From the Top.FRONT Front, View From the Front.BACK
+    Back, View From the Back.
     :type type: typing.Union[str, int]
     :param align_active: Align Active, Align to the active object’s axis 
     :type align_active: bool
     :param relative: Relative, Rotate relative to the current orientation 
     :type relative: bool
-    '''
+    """
 
     pass
 
 
 def view_camera():
-    '''Toggle the camera view 
+    """Toggle the camera view 
 
-    '''
+    """
 
     pass
 
 
 def view_center_camera():
-    '''Center the camera view 
+    """Center the camera view 
 
-    '''
+    """
 
     pass
 
 
 def view_center_cursor():
-    '''Center the view so that the cursor is in the middle of the view 
+    """Center the view so that the cursor is in the middle of the view 
 
-    '''
+    """
 
     pass
 
 
 def view_center_lock():
-    '''Center the view lock offset 
+    """Center the view lock offset 
 
-    '''
+    """
 
     pass
 
 
 def view_center_pick():
-    '''Center the view to the Z-depth position under the mouse cursor 
+    """Center the view to the Z-depth position under the mouse cursor 
 
-    '''
+    """
 
     pass
 
 
 def view_lock_clear():
-    '''Clear all view locking 
+    """Clear all view locking 
 
-    '''
+    """
 
     pass
 
 
 def view_lock_to_active():
-    '''Lock the view to the active object/bone 
+    """Lock the view to the active object/bone 
 
-    '''
+    """
 
     pass
 
 
 def view_orbit(angle: float = 0.0, type: typing.Union[str, int] = 'ORBITLEFT'):
-    '''Orbit the view 
+    """Orbit the view 
 
     :param angle: Roll 
     :type angle: float
-    :param type: Orbit, Direction of View OrbitORBITLEFT Orbit Left, Orbit the view around to the Left.ORBITRIGHT Orbit Right, Orbit the view around to the Right.ORBITUP Orbit Up, Orbit the view Up.ORBITDOWN Orbit Down, Orbit the view Down. 
+    :param type: Orbit, Direction of View OrbitORBITLEFT Orbit Left,
+    Orbit the view around to the Left.ORBITRIGHT Orbit Right, Orbit the view
+    around to the Right.ORBITUP Orbit Up, Orbit the view Up.ORBITDOWN Orbit
+    Down, Orbit the view Down.
     :type type: typing.Union[str, int]
-    '''
+    """
 
     pass
 
 
 def view_pan(type: typing.Union[str, int] = 'PANLEFT'):
-    '''Pan the view in a given direction 
+    """Pan the view in a given direction 
 
-    :param type: Pan, Direction of View PanPANLEFT Pan Left, Pan the view to the Left.PANRIGHT Pan Right, Pan the view to the Right.PANUP Pan Up, Pan the view Up.PANDOWN Pan Down, Pan the view Down. 
+    :param type: Pan, Direction of View PanPANLEFT Pan Left, Pan the view to
+    the Left.PANRIGHT Pan Right, Pan the view to the Right.PANUP Pan Up,
+    Pan the view Up.PANDOWN Pan Down, Pan the view Down.
     :type type: typing.Union[str, int]
-    '''
+    """
 
     pass
 
 
 def view_persportho():
-    '''Switch the current view from perspective/orthographic projection 
+    """Switch the current view from perspective/orthographic projection 
 
-    '''
+    """
 
     pass
 
 
 def view_roll(angle: float = 0.0, type: typing.Union[str, int] = 'ANGLE'):
-    '''Roll the view 
+    """Roll the view 
 
     :param angle: Roll 
     :type angle: float
-    :param type: Roll Angle Source, How roll angle is calculatedANGLE Roll Angle, Roll the view using an angle value.LEFT Roll Left, Roll the view around to the Left.RIGHT Roll Right, Roll the view around to the Right. 
+    :param type: Roll Angle Source, How roll angle is calculatedANGLE Roll
+    Angle, Roll the view using an angle value.LEFT Roll Left, Roll the view
+    around to the Left.RIGHT Roll Right, Roll the view around to the Right.
     :type type: typing.Union[str, int]
-    '''
+    """
 
     pass
 
 
 def view_selected(use_all_regions: bool = False):
-    '''Move the view to the selection center 
+    """Move the view to the selection center 
 
     :param use_all_regions: All Regions, View selected for all regions 
     :type use_all_regions: bool
-    '''
+    """
 
     pass
 
 
 def walk():
-    '''Interactively walk around the scene 
+    """Interactively walk around the scene 
 
-    '''
+    """
 
     pass
 
@@ -718,7 +758,7 @@ def zoom(mx: int = 0,
          my: int = 0,
          delta: int = 0,
          use_cursor_init: bool = True):
-    '''Zoom in/out in the view 
+    """Zoom in/out in the view 
 
     :param mx: Region Position X 
     :type mx: int
@@ -726,9 +766,10 @@ def zoom(mx: int = 0,
     :type my: int
     :param delta: Delta 
     :type delta: int
-    :param use_cursor_init: Use Mouse Position, Allow the initial mouse position to be used 
+    :param use_cursor_init: Use Mouse Position, Allow the initial mouse
+    position to be used
     :type use_cursor_init: bool
-    '''
+    """
 
     pass
 
@@ -739,7 +780,7 @@ def zoom_border(xmin: int = 0,
                 ymax: int = 0,
                 wait_for_input: bool = True,
                 zoom_out: bool = False):
-    '''Zoom in the view to the nearest object contained in the border 
+    """Zoom in the view to the nearest object contained in the border 
 
     :param xmin: X Min 
     :type xmin: int
@@ -753,14 +794,14 @@ def zoom_border(xmin: int = 0,
     :type wait_for_input: bool
     :param zoom_out: Zoom Out 
     :type zoom_out: bool
-    '''
+    """
 
     pass
 
 
 def zoom_camera_1_to_1():
-    '''Match the camera to 1:1 to the render output 
+    """Match the camera to 1:1 to the render output 
 
-    '''
+    """
 
     pass

@@ -1,4 +1,5 @@
-import sys
+# -*- coding: utf-8 -*-
+
 import typing
 import bpy
 
